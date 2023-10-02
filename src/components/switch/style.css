@@ -17,6 +17,10 @@
     color: blueviolet;
 }
 
+.version-description {
+    width: 100%;
+}
+
 text {
     font-size: 12px;
 }
