@@ -156,7 +156,7 @@ export function V2Body() {
                 </div>
                 <div id="players">
                     <span>
-                        Jogadores (%nome/%nível):
+                        Jogadores (%nome):
                     </span>
                     <textarea id="players-input" name="playersInput"></textarea>
                 </div>
