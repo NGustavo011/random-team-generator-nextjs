@@ -1,0 +1,56 @@
+{
+    "players": [
+        {
+            "name": "ANDRÉ",
+            "level": 3
+        },
+        {
+            "name": "ANDRESSA",
+            "level": 1
+        },
+        {
+            "name": "BAKKA",
+            "level": 3
+        },
+        {
+            "name": "CAMILA",
+            "level": 1
+        },
+        {
+            "name": "DENI",
+            "level": 4
+        },
+        {
+            "name": "GABI",
+            "level": 1
+        },
+        {
+            "name": "GUSTAVO",
+            "level": 2
+        },
+        {
+            "name": "IVONE",
+            "level": 2
+        },
+        {
+            "name": "JAINE",
+            "level": 4
+        },
+        {
+            "name": "JUNIOR",
+            "level": 3
+        },
+        {
+            "name": "LEO",
+            "level": 4
+        },
+        {
+            "name": "MARCELA",
+            "level": 1
+        },
+        {
+            "name": "MARI",
+            "level": 4
+        }
+    ]
+}

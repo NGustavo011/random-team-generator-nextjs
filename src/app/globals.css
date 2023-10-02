@@ -6,7 +6,7 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(../../assets/bg-mobile.jpg);
+    --bg-url: url(../assets/bg-mobile.jpg);
 }
   
 body {
@@ -62,6 +62,6 @@ div {
 
 @media (min-width: 700px) {
     :root {
-      --bg-url: url(../../assets/bg-desktop.jpg);
+      --bg-url: url(../assets/bg-desktop.jpg);
     }
 }

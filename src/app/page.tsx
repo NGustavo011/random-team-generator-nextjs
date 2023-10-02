@@ -1,4 +1,5 @@
 import { V1Body } from "@/components/v1-body/index"
+import { V2Body } from "@/components/v2-body"
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <div id="title">
             <h1>Gerador de times</h1>
         </div>
-        <V1Body />
+        <V2Body />
         <div id="result">
         </div>
       </div>
