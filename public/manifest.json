@@ -1,7 +1,7 @@
 {
     "short_name": "Random team generator",
     "name": "Random team generator",
-    "description": "",
+    "description": "...",
     "icons": [
         {
             "src": "/icons/icon-36x36.png",
@@ -44,5 +44,10 @@
             "sizes": "192x192",
             "purpose": "maskable"
         }
-    ]
+    ],
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000"
 }
