@@ -14,14 +14,17 @@ export function V1Body() {
         const playersArray = players.split(/\r?\n/);
         const playersObjectArray = []
         for(const playerData of playersArray){
-            if(playerData=="" || playerData.trim()=="Lista") continue;
+            if(playerData=="" || playerData.trim()=="Lista" || !(playerData[0] >= '0' && playerData[0] <= '9')) continue;
+            const regex = /\d+\ *\-/
+            const player = playerData.replace(regex, "").trim()
+            if(!player) continue;
             if(!playerData.includes("/")){
                 alert(`Formato de jogador inválido: ${playerData}.\nPor favor preencha no formato (%nome/%nível) como: Gustavo/1.`)
                 return;
             }
-            const regex = /\d+\ *\-/
-            const name = playerData.split("/")[0].replace(regex, "").trim()
-            const level = playerData.split("/")[1].trim()
+            const name = player.split("/")[0].trim()
+            if(!name) continue;
+            const level = player.split("/")[1].trim()
             playersObjectArray.push({
                 name,
                 level

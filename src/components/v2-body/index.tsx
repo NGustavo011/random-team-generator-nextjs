@@ -17,7 +17,7 @@ export function V2Body() {
         const playersArray = players.split(/\r?\n/);
         const playersObjectArray = []
         for(const playerData of playersArray){
-            if(playerData=="" || playerData.trim()=="Lista") continue;
+            if(playerData=="" || playerData.trim()=="Lista" || !(playerData[0] >= '0' && playerData[0] <= '9')) continue;
             const regex = /\d+\ *\-/
             let name = playerData.replace(regex, "").trim().toUpperCase()
             if(!name) continue;
