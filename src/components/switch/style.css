@@ -5,6 +5,7 @@
 .switch-versions button {
     padding: 5px;
     font-size: 20px;
+    transition: 0.2s ease-in-out;
 }
 
 .selected {
@@ -15,6 +16,11 @@
 .unselected {
     background-color: white;
     color: blueviolet;
+}
+
+.unselected:hover {
+    cursor: pointer;
+    background-color: rgb(223, 194, 250);
 }
 
 .version-description {
