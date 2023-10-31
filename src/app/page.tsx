@@ -1,4 +1,5 @@
 "use client"
+import { PointsBody } from "@/components/points-body"
 import { Switch } from "@/components/switch"
 import { V1Body } from "@/components/v1-body/index"
 import { V2Body } from "@/components/v2-body"
@@ -14,11 +15,13 @@ export default function Home() {
             <Switch version={version} setVersion={setVersion} />
         </div>
         {
-          version=="v1"
-          ?
-          <V1Body />
-          :
-          <V2Body />
+          version=="v1"&&<V1Body />
+        }
+        {
+          version=="v2"&&<V2Body />
+        }
+        {
+          version=="pontos"&&<PointsBody />
         }
         <div id="result">
         </div>

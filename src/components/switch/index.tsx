@@ -13,14 +13,14 @@ export function Switch(switchParams: SwitchParams) {
             <div className="switch-versions">
 				<button onClick={()=>setVersion("v1")} className={version=="v1"?"selected":"unselected"}>V1</button>
                 <button onClick={()=>setVersion("v2")} className={version=="v2"?"selected":"unselected"}>V2</button>
+                <button onClick={()=>setVersion("pontos")} className={version=="pontos"?"selected":"unselected"} style={{marginLeft: "30px"}}>Pontos</button>
 			</div>
             <div className='version-description'>
                 {
-                    version=="v1"
-                    ?
-                    <text>(O v1 permite com que seja enviado os dados de jogadores utilizando o formato nome/nível)</text>
-                    :
-                    <text>(O v2 permite com que seja enviado apenas a lista com o nome dos jogadores, sem informar o nível, utilizando uma base de dados pré-definida para fazer o balanceamento)</text>
+                    version=="v1" && <text>(O v1 permite com que seja enviado os dados de jogadores utilizando o formato nome/nível)</text>
+                }
+                {
+                    version=="v2" && <text>(O v2 permite com que seja enviado apenas a lista com o nome dos jogadores, sem informar o nível, utilizando uma base de dados pré-definida para fazer o balanceamento)</text>
                 }
             </div>
         </>
