@@ -1,5 +1,8 @@
 'use client';
+import React from 'react';
+import { WinCount } from '../win-count';
 import './style.css'
+import ReactDOM from 'react-dom';
 
 export function V1Body() {
 
@@ -88,6 +91,11 @@ export function V1Body() {
                 teamDiv.append(playerSpan)
                 playerSpan.append(player)
             }
+            const winsDivName = `team-win-div-${contador}`
+            const winsDiv = document.createElement("div")
+            winsDiv.setAttribute("id", winsDivName)
+            teamDiv.append(winsDiv)
+            ReactDOM.render(React.createElement(WinCount), document.getElementById(winsDivName))
         }
     }
     

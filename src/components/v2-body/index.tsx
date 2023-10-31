@@ -1,11 +1,12 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './style.css'
 import jsonPlayers from '@/assets/v2-players.json'
+import { WinCount } from '../win-count';
+import ReactDOM from 'react-dom';
 
 export function V2Body() {
-    const [showPlayers, setShowPlayers] = useState(false)
-
+    const [showPlayers, setShowPlayers] = useState(false)    
     function generateTeams(event: any) {
         event.preventDefault()
         const teamQuantity = Number(event.target.teamQuantityInput.value)
@@ -83,14 +84,19 @@ export function V2Body() {
         for(const team of teams) {
             const teamDiv = document.createElement("div")
             resultDiv.append(teamDiv)
-            const titleDiv = document.createElement("h4")
-            teamDiv.append(titleDiv)
-            titleDiv.append(`Time ${++contador}`)
+            const titleH4 = document.createElement("h4")
+            teamDiv.append(titleH4)
+            titleH4.append(`Time ${++contador}`)
             for(const player of team) {
                 const playerSpan = document.createElement("span")
                 teamDiv.append(playerSpan)
                 playerSpan.append(player)
             }
+            const winsDivName = `team-win-div-${contador}`
+            const winsDiv = document.createElement("div")
+            winsDiv.setAttribute("id", winsDivName)
+            teamDiv.append(winsDiv)
+            ReactDOM.render(React.createElement(WinCount), document.getElementById(winsDivName))
         }
     }
     

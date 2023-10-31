@@ -1,0 +1,16 @@
+.decrement-button, .increment-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.decrement-button:hover, .increment-button:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #444444;
+    cursor: pointer;
+}
