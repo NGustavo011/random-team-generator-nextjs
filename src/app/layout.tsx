@@ -21,6 +21,7 @@ export default function RootLayout({
         />
         <title>Random team generator</title>
         <link rel="stylesheet" href="./style.css" />
+        <meta name="theme-color" content="#000000"></meta>
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body>{children}</body>
