@@ -3,6 +3,7 @@ import { PointsBody } from "@/components/points-body"
 import { Switch } from "@/components/switch"
 import { V1Body } from "@/components/v1-body/index"
 import { V2Body } from "@/components/v2-body"
+import { V2OldBody } from "@/components/v2-old-body"
 import { useState } from "react"
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
         }
         {
           version=="v2"&&<V2Body />
+        }
+        {
+          version=="v2-old"&&<V2OldBody />
         }
         {
           version=="pontos"&&<PointsBody />
