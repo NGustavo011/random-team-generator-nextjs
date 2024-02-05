@@ -14,31 +14,31 @@
         },
         {
             "name": "CAMILA",
-            "level": 1
+            "level": 3
         },
         {
             "name": "DENI",
-            "level": 5
+            "level": 4
         },
         {
             "name":"FELIPE",
-            "level": 3
-        },
-        {
-            "name": "GABI",
-            "level": 1
-        },
-        {
-            "name": "GABI CRIVE",
             "level": 5
         },
         {
-            "name": "GUSTAVO",
+            "name": "GABI",
+            "level": 2
+        },
+        {
+            "name": "GABI CRIVE",
             "level": 3
         },
         {
+            "name": "GUSTAVO",
+            "level": 4
+        },
+        {
             "name": "IVONE",
-            "level": 2
+            "level": 3
         },
         {
             "name": "JAINE",
@@ -62,7 +62,7 @@
         },
         {
             "name": "RAUL",
-            "level": 2
+            "level": 3
         }
     ]
 }
