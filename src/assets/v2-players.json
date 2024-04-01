@@ -1,6 +1,10 @@
 {
     "players": [
         {
+            "name": "AMANDA",
+            "level": 2
+        },
+        {
             "name": "ANDRÉ",
             "level": 3
         },
