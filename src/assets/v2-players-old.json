@@ -2,7 +2,7 @@
     "players": [
         {
             "name": "AMANDA",
-            "level": 3
+            "level": 2
         },
         {
             "name": "ANDRÉ",
@@ -10,7 +10,7 @@
         },
         {
             "name": "ANDRESSA",
-            "level": 2
+            "level": 1
         },
         {
             "name": "BAKKA",
@@ -18,7 +18,7 @@
         },
         {
             "name": "CAMILA",
-            "level": 3
+            "level": 2
         },
         {
             "name": "DENI",
@@ -26,11 +26,11 @@
         },
         {
             "name":"FELIPE",
-            "level": 5
+            "level": 4
         },
         {
             "name": "GABI",
-            "level": 2
+            "level": 1
         },
         {
             "name": "GABI CRIVE",
@@ -38,11 +38,11 @@
         },
         {
             "name": "GUSTAVO",
-            "level": 4
+            "level": 3
         },
         {
             "name": "IVONE",
-            "level": 3
+            "level": 2
         },
         {
             "name": "JAINE",
@@ -58,7 +58,7 @@
         },
         {
             "name": "MARCELA",
-            "level": 2
+            "level": 1
         },
         {
             "name": "MARI",
